@@ -182,6 +182,7 @@ DEPENDENCIES
   quiet_assets
   rails
   rspec-rails
+  sass
   sass-rails
   shoulda-matchers
   spring
