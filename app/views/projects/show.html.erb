@@ -1,16 +1,10 @@
 <% content_for(:title, "Project Details") %>
-<% content_for(:navbar) do %>
-<ul class="nav navbar-nav">
-  <li class="active"><%= link_to "Home", categories_path %></li>
-  <li><%= link_to "Add New Language", new_category_path %></li>
-</ul>
-<% end %>
 
-<h1><%= @project.name %></h1>
+<h1><%= @project.name %></h1><hr>
 
-<h4><%= @project.description %></h4>
+<h4><%= @project.description %></h4><hr>
 
-<h4><%= @project.github %></h4>
+<h4><%= @project.github %></h4><hr>
 
 
 
