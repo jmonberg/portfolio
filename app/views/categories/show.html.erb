@@ -8,7 +8,9 @@
 <ul>
   <% @category.projects.each do |project| %>
   <li>
-    <%= project.description %> |
+    <%= link_to project.name, category_project_path(@category, project) %> : <br>
+    <%= project.description %> <br>
+    <%= project.github %> <br> |
     <%= link_to "Edit", edit_category_project_path(@category, project) %> |
     <%= link_to "Delete", category_project_path(@category, project),
     :data => {:confirm => "Are you sure you want to delete this project?",
