@@ -10,6 +10,7 @@ class CategoriesController < ApplicationController
   end
 
   def new
+    @category = Category.new
     render :new
   end
 
@@ -27,7 +28,7 @@ class CategoriesController < ApplicationController
   def category_params
     params.require(:category).permit(:name, :description)
   end
-  
+
 
 
 end
