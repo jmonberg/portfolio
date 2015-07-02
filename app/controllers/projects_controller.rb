@@ -29,6 +29,7 @@ class ProjectsController < ApplicationController
     @category = Category.find(params[:category_id])
     @project = Project.find(params[:id])
     if @project.update(project_params)
+      flash[:notice] = "Project successfully updated!"
       redirect_to category_project_path(@category, @project)
     else
       render :edit
