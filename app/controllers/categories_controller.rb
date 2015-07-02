@@ -1,17 +1,14 @@
 class CategoriesController < ApplicationController
   def index
     @categories = Category.all
-    render :index
   end
 
   def show
     @category = Category.find(params[:id])
-    render :show
   end
 
   def new
     @category = Category.new
-    render :new
   end
 
   def create
@@ -26,7 +23,6 @@ class CategoriesController < ApplicationController
 
   def edit
     @category = Category.find(params[:id])
-    render :edit
   end
 
   def update
