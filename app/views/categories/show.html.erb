@@ -19,7 +19,7 @@
     <%= link_to project.name, category_project_path(@category, project) %> : <br>
     <%= project.description %> <br>
     <%= project.github %> <br> |
-    <a class="btn btn-info" role="button"<%= link_to "Edit", edit_category_project_path(@category, project) %></a>
+    <a class="btn btn-warning" role="button"<%= link_to "Edit", edit_category_project_path(@category, project) %></a>
     <a class="btn btn-danger" role="button"<%= link_to "Delete", category_project_path(@category, project),
     :data => {:confirm => "Are you sure you want to delete this project?",
       :method => "delete"} %></a>
@@ -34,7 +34,7 @@
 
 <p><a class="btn btn-info" role="button"<%= link_to "Add a project", new_category_project_path(@category) %></p></a>
 
-<p><a class="btn btn-info" role="button"<%= link_to "Edit Category", edit_category_path(@category) %></p></a>
+<p><a class="btn btn-warning" role="button"<%= link_to "Edit Category", edit_category_path(@category) %></p></a>
 
 <p><a class="btn btn-info" role="button"<%= link_to "Return to Categories", categories_path %></p></a>
 
