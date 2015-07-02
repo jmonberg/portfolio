@@ -1,4 +1,11 @@
 <% content_for(:title, "Courtney Phillips Portfolio") %>
+<% content_for(:navbar) do %>
+<ul class="nav navbar-nav">
+  <li class="active"><%= link_to "Home", categories_path %></li>
+  <li><%= link_to "Add New Language", new_category_path %></li>
+</ul>
+<% end %>
+
 
 <h1>Categories</h1>
 
