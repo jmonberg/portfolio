@@ -3,8 +3,35 @@
 
 <h4><%= @category.description %></h4>
 
-<p><%= link_to "Edit Category", edit_category_path %></p>
 
+
+
+<% if @category.projects.any? %>
+<h4>Here are the projects for this category:</h4>
+
+<ul>
+  <% @category.projects.each do |project| %>
+  <li>
+    <%= project.description %> |
+    <%= link_to "Edit", edit_category_project_path(@category, project) %> |
+    <%= link_to "Delete", category_project_path(@category, project),
+    :data => {:confirm => "Are you sure you want to delete this project?",
+      :method => "delete"} %>
+    </li>
+    <% end %>
+  </ul>
+  <% else %>
+  <p>There are no projects yet!</p>
+  <% end %>
+
+  <p><%= link_to "Add a project", new_category_project_path(@category) %></p>
+
+
+
+
+
+
+<p><%= link_to "Edit Category", edit_category_path %></p>
 
 <p><%= link_to "Return to Categories", categories_path %></p>
 
