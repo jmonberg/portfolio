@@ -23,6 +23,12 @@ class CategoriesController < ApplicationController
     end
   end
 
+  def edit
+    @category = Category.find(params[:id])
+    render :edit
+  end
+  
+
   private
 
   def category_params
