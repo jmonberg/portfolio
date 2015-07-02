@@ -1,10 +1,6 @@
 <h1><%= @category.name %></h1>
 
-
 <h4><%= @category.description %></h4>
-
-
-
 
 <% if @category.projects.any? %>
 <h4>Here are the projects for this category:</h4>
@@ -21,15 +17,11 @@
     <% end %>
   </ul>
   <% else %>
-  <p>There are no projects yet!</p>
+    <p>There are no projects yet!</p>
   <% end %>
 
-  <p><%= link_to "Add a project", new_category_project_path(@category) %></p>
 
-
-
-
-
+<p><%= link_to "Add a project", new_category_project_path(@category) %></p>
 
 <p><%= link_to "Edit Category", edit_category_path %></p>
 
