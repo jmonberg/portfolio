@@ -8,5 +8,10 @@ class CategoriesController < ApplicationController
     @category = Category.find(params[:id])
     render :show
   end
+
+  def new
+    render :new
+  end
   
+
 end
