@@ -1,4 +1,6 @@
 require 'rails_helper'
+require 'helpers/login_helper'
+
 
 describe "the edit a category process" do
   it "edits a category" do

@@ -1,4 +1,6 @@
 require 'rails_helper'
+require 'helpers/login_helper'
+
 
 # describe 'the deleting a project path' do
 #   it 'will offer an option to delete a project' do

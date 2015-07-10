@@ -1,4 +1,6 @@
 require 'rails_helper'
+require 'helpers/login_helper'
+
 
 describe "user log in" do
   it "allows an existing user to sign in" do

@@ -1,4 +1,6 @@
 require 'rails_helper'
+require 'helpers/login_helper'
+
 
 describe "the add a project process" do
   it "adds a new project under a language category to the portfolio" do

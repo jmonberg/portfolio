@@ -1,4 +1,6 @@
 require 'rails_helper'
+require 'helpers/login_helper'
+
 
 describe "the edit a project process" do
   it "edits a project" do

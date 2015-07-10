@@ -13,11 +13,15 @@ FactoryGirl.define do
   factory(:user) do
     email('cour@pdx.edu')
     password('12345678')
+
+    factory(:admin) do
+      admin(true)
+    end
   end
 
   factory(:comment) do
     name('name')
     body('body')
   end
-  
+
 end

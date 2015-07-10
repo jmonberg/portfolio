@@ -1,4 +1,6 @@
 require 'rails_helper'
+require 'helpers/login_helper'
+
 
 describe 'the registering a user process' do
   it 'will provide a section for users to create accounts' do

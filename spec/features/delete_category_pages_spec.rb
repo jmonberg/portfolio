@@ -1,4 +1,6 @@
 require 'rails_helper'
+require 'helpers/login_helper'
+
 
 describe 'the deleting a category path' do
   it 'will delete a category' do
