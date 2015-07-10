@@ -731,6 +731,15 @@
         1,
         null,
         null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/Guest/Desktop/rails-portfolio/spec/features/user_login_page_spec.rb": [
@@ -806,7 +815,7 @@
       "/Users/Guest/Desktop/rails-portfolio/app/controllers/categories_controller.rb": [
         1,
         1,
-        4,
+        5,
         null,
         null,
         1,
@@ -919,6 +928,6 @@
         null
       ]
     },
-    "timestamp": 1436544710
+    "timestamp": 1436545232
   }
 }
