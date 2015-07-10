@@ -4,7 +4,7 @@ require 'helpers/login_helper'
 
 describe "the edit a project process" do
   it "edits a project" do
-    category = Category.create(:name => 'CSS', :description => 'test')
+    category = FactoryGirl.create(:category)
     project = Project.create(:name => "HTML Project", :description => "test", :github => 'test', :category_id => category.id)
     login_admin
     visit category_path(category)
@@ -26,7 +26,7 @@ describe "the edit a project process" do
   end
 
   it "gives error when no name is entered" do
-    category = Category.create(:name => 'CSS', :description => 'test')
+    category = FactoryGirl.create(:category)
     project = Project.create(:name => "HTML Project", :description => "test", :github => 'test', :category_id => category.id)
     login_admin
     visit category_path(category)
@@ -37,7 +37,7 @@ describe "the edit a project process" do
   end
 
   it "gives error when no github is entered" do
-    category = Category.create(:name => 'CSS', :description => 'test')
+    category = FactoryGirl.create(:category)
     project = Project.create(:name => "HTML Project", :description => "test", :github => 'test', :category_id => category.id)
     login_admin
     visit category_path(category)

@@ -24,4 +24,9 @@ FactoryGirl.define do
     body('body')
   end
 
+  factory(:post) do
+    title('title')
+    content('content')
+  end
+
 end
