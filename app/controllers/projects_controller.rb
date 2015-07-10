@@ -1,4 +1,7 @@
 class ProjectsController < ApplicationController
+  before_filter :authenticate_user!
+  before_filter :admin_only, :except => :show
+
   def new
     @category = Category.find(params[:category_id])
     @project = @category.projects.new
