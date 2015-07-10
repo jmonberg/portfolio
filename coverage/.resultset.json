@@ -125,6 +125,7 @@
         null,
         null,
         1,
+        1,
         null,
         null
       ],
@@ -781,6 +782,7 @@
         2,
         2,
         2,
+        2,
         null
       ],
       "/Users/Guest/Desktop/rails-portfolio/app/models/post.rb": [
@@ -949,6 +951,6 @@
         null
       ]
     },
-    "timestamp": 1436545619
+    "timestamp": 1436552822
   }
 }

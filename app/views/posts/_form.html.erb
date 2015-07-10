@@ -1,0 +1,18 @@
+<%= form_for @post do |f| %>
+<% if @post.errors.any? %>
+<div id="errors">
+  <h3><%= pluralize(@post.errors.count, "error") %> prevented this post from saving:</h3>
+  <ul>
+    <% @post.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+<p><%= f.label :title %></p>
+<p><%= f.text_field :title %></p>
+<p><%= f.label :content %></p>
+<p><%= f.text_area :content %></p>
+<%= f.submit %>
+<% end %>
