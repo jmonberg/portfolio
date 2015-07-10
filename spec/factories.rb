@@ -1,5 +1,6 @@
 FactoryGirl.define do
-  # factory(:task) do
-  #   name('finish macrame plant holder')
-  # end
+  factory(:category) do
+    name('Git')
+    description('A version control system')
+  end
 end
