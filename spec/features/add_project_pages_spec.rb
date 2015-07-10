@@ -5,6 +5,7 @@ require 'helpers/login_helper'
 describe "the add a project process" do
   it "adds a new project under a language category to the portfolio" do
     category = Category.create(:name => "HTML", :description => "test")
+    login_admin
     visit category_path(category)
     click_on 'Add a project'
     fill_in 'Name', :with => 'Basic Website'
@@ -16,6 +17,7 @@ describe "the add a project process" do
 
   it "gives error when no name is entered" do
     category = Category.create(:name => "HTML", :description => "test")
+    login_admin
     visit category_path(category)
     click_on 'Add a project'
     fill_in 'Name', :with => ''
@@ -27,6 +29,7 @@ describe "the add a project process" do
 
   it "gives error when no description is entered" do
     category = Category.create(:name => "HTML", :description => "test")
+    login_admin
     visit category_path(category)
     click_on 'Add a project'
     fill_in 'Name', :with => 'Basic Website'
@@ -38,6 +41,7 @@ describe "the add a project process" do
 
   it "gives error when no github repo is entered" do
     category = Category.create(:name => "HTML", :description => "test")
+    login_admin
     visit category_path(category)
     click_on 'Add a project'
     fill_in 'Name', :with => 'Basic Website'

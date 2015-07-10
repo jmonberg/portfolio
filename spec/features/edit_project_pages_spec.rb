@@ -6,6 +6,7 @@ describe "the edit a project process" do
   it "edits a project" do
     category = Category.create(:name => 'CSS', :description => 'test')
     project = Project.create(:name => "HTML Project", :description => "test", :github => 'test', :category_id => category.id)
+    login_admin
     visit category_path(category)
     click_on 'Edit'
     fill_in 'Description', :with => 'Wow!'
@@ -16,6 +17,7 @@ describe "the edit a project process" do
   it "gives error when no description is entered" do
     category= Category.create(:name => 'CSS', :description => 'test')
     project = Project.create(:name => "HTML Project", :description => "test", :github => 'test', :category_id => category.id)
+    login_admin
     visit category_path(category)
     click_on 'Edit'
     fill_in 'Description', :with => ''
@@ -26,6 +28,7 @@ describe "the edit a project process" do
   it "gives error when no name is entered" do
     category = Category.create(:name => 'CSS', :description => 'test')
     project = Project.create(:name => "HTML Project", :description => "test", :github => 'test', :category_id => category.id)
+    login_admin
     visit category_path(category)
     click_on 'Edit'
     fill_in 'Name', :with => ''
@@ -36,6 +39,7 @@ describe "the edit a project process" do
   it "gives error when no github is entered" do
     category = Category.create(:name => 'CSS', :description => 'test')
     project = Project.create(:name => "HTML Project", :description => "test", :github => 'test', :category_id => category.id)
+    login_admin
     visit category_path(category)
     click_on 'Edit'
     fill_in 'Github', :with => ''

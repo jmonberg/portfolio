@@ -5,6 +5,7 @@ require 'helpers/login_helper'
 describe 'the deleting a category path' do
   it 'will delete a category' do
     test_category = FactoryGirl.create(:category)
+    login_admin
     visit category_path(test_category)
     click_link 'Delete'
     expect(page).to have_content("successfully deleted")
