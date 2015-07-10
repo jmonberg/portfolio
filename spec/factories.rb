@@ -9,4 +9,9 @@ FactoryGirl.define do
     description('A really cool project')
     github('github.com/test')
   end
+
+  factory(:user) do
+    email('cour@pdx.edu')
+    password('12345678')
+  end
 end

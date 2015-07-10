@@ -534,6 +534,11 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/Guest/Desktop/rails-portfolio/config/routes.rb": [
@@ -777,6 +782,13 @@
         2,
         2,
         null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/Guest/Desktop/rails-portfolio/app/controllers/categories_controller.rb": [
@@ -895,6 +907,6 @@
         null
       ]
     },
-    "timestamp": 1436543824
+    "timestamp": 1436543998
   }
 }
