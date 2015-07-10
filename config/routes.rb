@@ -10,4 +10,6 @@ Rails.application.routes.draw do
     resources :comments
   end
 
+  get '/about', to: 'pages#about'
+
 end
