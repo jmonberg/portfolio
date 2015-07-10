@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-07-10T08:40:49-07:00">2015-07-10T08:40:49-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-07-10T08:51:58-07:00">2015-07-10T08:51:58-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,13 +25,13 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.29
+         1.28
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>34</b> files in total.
+    <b>35</b> files in total.
     <b>287</b> relevant lines. 
     <span class="green"><b>283</b> lines covered</span> and
     <span class="red"><b>4</b> lines missed </span>
@@ -67,7 +67,7 @@
         <td>29</td>
         <td>29</td>
         <td>0</td>
-        <td>2.3</td>
+        <td>2.2</td>
       </tr>
       
       <tr>
@@ -263,9 +263,9 @@
       <tr>
         <td class="strong"><a href="#b8db8c6b99d9ce9d5581c2bcac7443afc0e38924" class="src_link" title="spec/factories.rb">spec/factories.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>6</td>
-        <td>4</td>
-        <td>4</td>
+        <td>12</td>
+        <td>8</td>
+        <td>8</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -304,8 +304,18 @@
         <td class="strong"><a href="#a750bd1533656b490fac7fad5eccc0ae8a8b0309" class="src_link" title="spec/features/delete_category_pages_spec.rb">spec/features/delete_category_pages_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>17</td>
-        <td>12</td>
-        <td>12</td>
+        <td>7</td>
+        <td>7</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#5a65ea9457b7d1cecc9a0310a3b04a69a92e30da" class="src_link" title="spec/features/delete_project_pages_spec.rb">spec/features/delete_project_pages_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>10</td>
+        <td>1</td>
+        <td>1</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -480,8 +490,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="3">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="4" data-linenumber="3">
+          <span class="hits">4</span>
           
           <code class="ruby">    @categories = Category.all</code>
         </li>
@@ -504,8 +514,8 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="15" data-linenumber="7">
-          <span class="hits">15</span>
+        <li class="covered" data-hits="14" data-linenumber="7">
+          <span class="hits">14</span>
           
           <code class="ruby">    @category = Category.find(params[:id])</code>
         </li>
@@ -1053,7 +1063,7 @@
         <li class="missed" data-hits="0" data-linenumber="43">
           
           
-          <code class="ruby">    redirect_to categories_path(@category)</code>
+          <code class="ruby">    redirect_to category_path(@category)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
@@ -4095,8 +4105,8 @@
     <h3>spec/factories.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>8</b> relevant lines. 
+      <span class="green"><b>8</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -4135,6 +4145,42 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  factory(:project) do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    name(&#39;Project&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    description(&#39;A really cool project&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    github(&#39;github.com/test&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">end</code>
@@ -4653,8 +4699,8 @@
     <h3>spec/features/delete_category_pages_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>12</b> relevant lines. 
-      <span class="green"><b>12</b> lines covered</span> and
+      <b>7</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -4680,40 +4726,40 @@
           <code class="ruby">describe &#39;the deleting a category path&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="4">
           
-          <code class="ruby">  it &#39;will offer a delete option&#39; do</code>
+          
+          <code class="ruby">  # it &#39;will offer a delete option&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="5">
           
-          <code class="ruby">    test_category = FactoryGirl.create(:category)</code>
+          
+          <code class="ruby">  #   test_category = FactoryGirl.create(:category)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="6">
           
-          <code class="ruby">    visit &#39;/&#39;</code>
+          
+          <code class="ruby">  #   visit &#39;/&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="7">
           
-          <code class="ruby">    click_link test_category.name</code>
+          
+          <code class="ruby">  #   click_link test_category.name</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="8">
           
-          <code class="ruby">    expect(page).to have_content(&quot;Delete&quot;)</code>
+          
+          <code class="ruby">  #   expect(page).to have_content(&quot;Delete&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
@@ -4762,6 +4808,84 @@
           
           
           <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="5a65ea9457b7d1cecc9a0310a3b04a69a92e30da">
+  <div class="header">
+    <h3>spec/features/delete_project_pages_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"># describe &#39;the deleting a project path&#39; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">#   it &#39;will offer an option to delete a project&#39; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">#     testproject = FactoryGirl.create(:project)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">#     visit category_project_path(testproject)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">#     click_link &#39;Delete&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">#     expect(page).to have_content &quot;There are no projects yet!&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">#   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"># end</code>
         </li>
       
     </ol>

@@ -528,6 +528,12 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/Guest/Desktop/rails-portfolio/config/routes.rb": [
@@ -611,18 +617,30 @@
         1,
         null,
         1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         1,
         1,
         1,
         1,
         1,
         null,
+        null
+      ],
+      "/Users/Guest/Desktop/rails-portfolio/spec/features/delete_project_pages_spec.rb": [
+        1,
         null,
-        1,
-        1,
-        1,
-        1,
-        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null
       ],
@@ -768,11 +786,11 @@
       "/Users/Guest/Desktop/rails-portfolio/app/controllers/categories_controller.rb": [
         1,
         1,
-        5,
+        4,
         null,
         null,
         1,
-        15,
+        14,
         null,
         null,
         1,
@@ -881,6 +899,6 @@
         null
       ]
     },
-    "timestamp": 1436542849
+    "timestamp": 1436543517
   }
 }
