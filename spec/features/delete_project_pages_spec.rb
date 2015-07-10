@@ -1,7 +1,6 @@
 require 'rails_helper'
 require 'helpers/login_helper'
 
-
 describe "the delete a project process" do
   it "allows admins to delete projects" do
     category = FactoryGirl.create(:category)
