@@ -7,14 +7,14 @@
   | <%= link_to "Edit", edit_post_path(@post) %> |
   <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: 'Are you sure?' } %>
 </p>
-
+<br>
 <p class="body">
   <%= @post.content %>
 </p>
 
-
+<hr>
 <div id="comments">
-  <h4>This post has <%= @post.comments.count %> comments:</h4>
+  <h4>This post has <%= @post.comments.count %> comments:</h4><br>
   <%= render @post.comments %>
   <h3>Add a Comment</h3>
   <%= render "comments/form" %>

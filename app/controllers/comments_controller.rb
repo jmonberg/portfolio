@@ -1,7 +1,7 @@
 class CommentsController < ApplicationController
   before_filter :authenticate_user!
   before_filter :admin_only, :except => [:new, :create]
-  
+
   def create
     @post = Post.find(params[:post_id])
     @comment = @post.comments.create(comment_params)
@@ -30,7 +30,7 @@ private
   def admin_only
     unless current_user.admin?
       @post = Post.find(params[:id])
-      redirect_to post_path(@post), :alert => "Access Denied"
+      redirect_to denied_path, :alert => "Access Denied"
     end
   end
 

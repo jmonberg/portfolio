@@ -3,54 +3,14 @@
 <head>
   <title><%= yield(:title) %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css7family=Raleway:400,700' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<!--
-  <div id="sidebar">
-    <div id="logo">
-      <%= link_to root_path do %>
-        <%= image_tag "carpodacusvinaceusmale-64-97327.png" %>
-      <% end %>
-    </div>
-    <ul>
-      <li class="category">Portfolio</li>
-      <li><%= link_to "Homepage", root_path %></li>
-      <li>About</li>
-    </ul>
-    <ul>
-      <li class="category">Social</li>
-      <li><a href="https://twitter.com/courtneymaepdx">Twitter</a></li>
-      <li><a href="http://instagram.com/courtneymaybe">Instagram</a></li>
-      <li><a href="https://github.com/courtneyphillips">Github</a></li>
-      <li><a href="https://www.linkedin.com/in/courtneymaephillips">LinkedIn</a></li>
-      <li><a href="mailto:courtney.mae.phillips@gmail.com">Email</a></li>
-    </ul>
-
-    <p class="sign_in">Admin Login</p>
-
-  </div> -->
-
-
-
-
-
-
-
-
-
-
-
-
   <div class="jumbotron">
     <div class="container">
       <h1>Courtney Phillips</h1>
       <p class="lead">Web Developer, Instructor, and Mexican Food enthusiast from Portland, Oregon.</p>
-    <% if current_page?(posts_path) %>
-    <h2>Blog</h2>
-    <% end %>
     </div>
   </div>
   <nav class="navbar navbar-default">
@@ -68,39 +28,47 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li><%= link_to "Home", categories_path %></li>
-          <li><%= link_to "Add New Language", new_category_path %></li>
           <li><%= link_to "About", about_path %></li>
           <li><%= link_to "Blog", posts_path %></li>
-
-          <li><a href="https://github.com/courtneyphillips">Github</a></li>
-          <li><a href="https://www.linkedin.com/in/courtneymaephillips">LinkedIn</a></li>
-
-          <% if user_signed_in? %>
-            <li><a href="#">Logged in as <strong><%= current_user.email %></a></strong></a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Social <span class="caret"></span>
+            </a>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="https://github.com/courtneyphillips">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/courtneymaephillips">LinkedIn</a></li>
+            <li><a href="http://instagram.com/courtneymaybe">Instagram</a></li>
+            <li><a href="http://twitter.com/courtneymaepdx">Twitter</a></li>
+          </ul>
+        </li>
+        <ul class="nav navbar-nav navbar-right special-color">
+        <% if user_signed_in? %>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Logged in as <%= current_user.email %> <span class="caret"></span>
+              </a>
+            <ul class="dropdown-menu">
             <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
             <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
-          <% elsif !user_signed_in? %>
-            <li>Admin Log In</li>
+          </ul>
           <% else %>
-            <li><%= link_to "Sign up", new_user_registration_path %> </li>
-            <li><%= link_to "Login", new_user_session_path %></li>
+            <ul class="nav navbar-nav">
+              <li class="navbar-right"><%= link_to "Sign up", new_user_registration_path %> </li>
+              <li class="navbar-right"><%= link_to "Login", new_user_session_path %></li>
+            </ul>
           <% end %>
         </ul>
       </div>
     </div>
   </nav>
   <div class="container">
-
-
+    <div class="errors">
       <% flash.each do |name, msg| %>
         <%= content_tag(:div, msg, class: "alert") %>
       <% end %>
-
-      <%= yield %>
-
     </div>
-
-
+    <%= yield %>
   </div>
 </body>
 </html>

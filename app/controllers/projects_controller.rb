@@ -7,6 +7,9 @@ class ProjectsController < ApplicationController
     @project = @category.projects.new
   end
 
+  def index
+  end
+
   def create
     @category = Category.find(params[:category_id])
     @project = @category.projects.new(project_params)
@@ -42,8 +45,9 @@ class ProjectsController < ApplicationController
   def destroy
     @category = Category.find(params[:category_id])
     @project = Project.find(params[:id])
-    @project.destroy
+    if @project.destroy
     redirect_to category_path(@category)
+  end
   end
 
   private
@@ -54,7 +58,7 @@ class ProjectsController < ApplicationController
 
   def admin_only
     unless current_user.admin?
-      redirect_to category_projects_path, :alert => "Access Denied"
+      redirect_to category_path(@category), :alert => "Access Denied"
     end
   end
 

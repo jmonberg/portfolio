@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root :to => 'categories#index'
 
   resources :categories do
-    resources :projects, :except => [:index]
+    resources :projects
   end
 
   resources :posts do
@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   end
 
   get '/about', to: 'pages#about'
+  get '/denied', to: 'pages#denied'
 
 end

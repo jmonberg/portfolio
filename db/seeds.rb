@@ -15,7 +15,6 @@ Post.create([{
   },
 
   {
-
   title: 'Bacon Ipsum',
   content: 'Bacon ipsum dolor amet tongue brisket shankle jerky tenderloin chicken sausage flank andouille pig venison, salami alcatra. Boudin swine ground round pork belly, pancetta ham hock frankfurter pork t-bone biltong shank tenderloin turkey tongue short ribs. Meatball ham hock sausage spare ribs jerky. Pastrami ball tip frankfurter leberkas tongue, ground round boudin biltong kevin tail. Venison turducken hamburger fatback alcatra ham. Sausage picanha porchetta kevin turducken chicken corned beef rump pig frankfurter drumstick shoulder beef shankle kielbasa. Spare ribs porchetta chicken, sirloin chuck tail tenderloin boudin ribeye.
 

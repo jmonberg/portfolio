@@ -1,10 +1,11 @@
 <% if @posts.any? %>
-
+  <hr>
   <% @posts.each do |post| %>
     <div class="post_wrapper">
       <h2 class="title"><%= link_to post.title, post %></h2>
-      <p class="date"><%= post.created_at.strftime("%b, %d, %y") %> </p>
+      <p class="date"><em><%= post.created_at.strftime("%B %d, %Y") %></em></p>
     </div>
+  <hr>
   <% end %>
 
 <% else %>

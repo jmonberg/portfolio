@@ -41,10 +41,11 @@ class CategoriesController < ApplicationController
   def destroy
     @category = Category.find(params[:id])
     @category.destroy
-    redirect_to categories_path
-    flash[:notice] = "Category successfully deleted!"
-
+    if @category.destroy
+      redirect_to categories_path
+      flash[:notice] = "Category successfully deleted!"
   end
+end
 
 private
 
@@ -54,7 +55,7 @@ private
 
   def admin_only
     unless current_user.admin?
-      redirect_to categories_path, :alert => "Access Denied"
+      redirect_to denied_path, :alert => "Access Denied"
     end
   end
 
