@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     resources :projects, :except => [:index]
   end
 
-  resources :posts 
+  resources :posts do
+    resources :comments
+  end
 
 end
