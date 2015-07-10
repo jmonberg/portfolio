@@ -48,6 +48,9 @@
     <div class="container">
       <h1>Courtney Phillips</h1>
       <p class="lead">Web Developer, Instructor, and Mexican Food enthusiast from Portland, Oregon.</p>
+    <% if current_page?(posts_path) %>
+    <h2>Blog</h2>
+    <% end %>
     </div>
   </div>
   <nav class="navbar navbar-default">
@@ -66,8 +69,10 @@
         <ul class="nav navbar-nav">
           <li><%= link_to "Home", categories_path %></li>
           <li><%= link_to "Add New Language", new_category_path %></li>
+          <li><%= link_to "About", about_path %></li>
           <li><a href="https://github.com/courtneyphillips">Github</a></li>
           <li><a href="https://www.linkedin.com/in/courtneymaephillips">LinkedIn</a></li>
+
           <% if user_signed_in? %>
             <li><a href="#">Logged in as <strong><%= current_user.email %></a></strong></a></li>
             <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
@@ -77,30 +82,21 @@
             <li><%= link_to "Login", new_user_session_path %></li>
           <% end %>
         </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+      </div>
+    </div>
   </nav>
   <div class="container">
 
-    <div id="main_content">
-      <div id="header">
-        <p>
-          All Posts
-        </p>
-        <div class="buttons">
-          <button class="button"><%= link_to "New Post", new_post_path %></button>
-          <button class="button">Log Out</button>
-        </div>
-      </div>
 
       <% flash.each do |name, msg| %>
-      <%= content_tag(:div, msg, class: "alert") %>
+        <%= content_tag(:div, msg, class: "alert") %>
       <% end %>
+      
       <%= yield %>
 
     </div>
 
-    
+
   </div>
 </body>
 </html>
