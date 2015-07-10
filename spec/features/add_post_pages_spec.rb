@@ -40,4 +40,47 @@ describe 'the adding a blog post path' do
     click_button 'Create Post'
     expect(page).to have_content('errors')
   end
+
+  it 'will allow admins to edit' do
+    login_admin
+    post = FactoryGirl.create(:post)
+    visit post_path(post)
+    click_link 'Edit'
+    expect(page).to have_content('Edit Post')
+  end
+
+  it 'will not allow users to edit' do
+    login_user
+    post = FactoryGirl.create(:post)
+    visit post_path(post)
+    click_link 'Edit'
+    expect(page).to have_content('Access Denied')
+  end
+
+   it 'will save changes made when editing' do
+     login_admin
+     post = FactoryGirl.create(:post)
+     visit post_path(post)
+     click_link 'Edit'
+     fill_in 'Title', :with => 'New Edited Title'
+     fill_in 'Content', :with => 'Creating basic web pages.'
+     click_button('Update Post')
+     expect(page).to have_content('New Edited Title')
+   end
+
+   it 'will allow admins to delete posts' do
+     login_admin
+     post = FactoryGirl.create(:post)
+     visit post_path(post)
+     click_link 'Delete'
+     expect(page).to have_content('no blog posts')
+   end
+
+   it 'will not allow users to delete posts' do
+     login_user
+     post = FactoryGirl.create(:post)
+     visit post_path(post)
+     click_link 'Delete'
+     expect(page).to have_content('Access Denied')
+   end
 end
