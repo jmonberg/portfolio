@@ -1,5 +1,6 @@
 require 'rails_helper'
 
+describe 'the deleting a category path' do
   it 'will delete a category' do
     test_category = FactoryGirl.create(:category)
     visit category_path(test_category)
