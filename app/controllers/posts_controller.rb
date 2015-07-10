@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_user!
+  before_filter :admin_only, :except => [:index, :show]
+
 
   def index
     @posts = Post.all.order('created_at DESC')
@@ -44,6 +46,13 @@ end
 
 
   private
+
+  def admin_only
+    unless current_user.admin?
+      redirect_to root_path, :alert => "Access Denied"
+    end
+  end
+
 
   def post_params
     params.require(:post).permit(:title, :content)

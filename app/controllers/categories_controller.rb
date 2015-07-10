@@ -52,4 +52,10 @@ private
     params.require(:category).permit(:name, :description)
   end
 
+  def admin_only
+    unless current_user.admin?
+      redirect_to categories_path, :alert => "Access Denied"
+    end
+  end
+
 end

@@ -30,5 +30,11 @@ private
     params.require(:comment).permit(:name, :body)
   end
 
+  def admin_only
+    unless current_user.admin?
+      @post = Post.find(params[:id])
+      redirect_to post_path(@post), :alert => "Access Denied"
+    end
+  end
 
 end

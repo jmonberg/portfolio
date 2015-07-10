@@ -52,4 +52,10 @@ class ProjectsController < ApplicationController
     params.require(:project).permit(:name, :description, :github)
   end
 
+  def admin_only
+    unless current_user.admin?
+      redirect_to category_projects_path, :alert => "Access Denied"
+    end
+  end
+
 end
