@@ -30,7 +30,7 @@ private
   def admin_only
     unless current_user.admin?
       @post = Post.find(params[:id])
-      redirect_to denied_path, :alert => "Access Denied"
+      redirect_to denied_path
     end
   end
 

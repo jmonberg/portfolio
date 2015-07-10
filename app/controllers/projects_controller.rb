@@ -58,7 +58,7 @@ class ProjectsController < ApplicationController
 
   def admin_only
     unless current_user.admin?
-      redirect_to category_path(@category), :alert => "Access Denied"
+      redirect_to denied_path
     end
   end
 

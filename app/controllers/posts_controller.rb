@@ -49,7 +49,7 @@ end
 
   def admin_only
     unless current_user.admin?
-      redirect_to denied_path, :alert => "Access Denied"
+      redirect_to denied_path
     end
   end
 
