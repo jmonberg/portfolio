@@ -16,6 +16,8 @@ FactoryGirl.define do
     password('12345678')
 
     factory(:admin) do
+      email('test@test.com')
+      password('12345678')
       admin(true)
     end
   end
