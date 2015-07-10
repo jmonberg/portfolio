@@ -13,7 +13,6 @@
       <p class="lead">Web Developer, Instructor, and Mexican Food enthusiast from Portland, Oregon.</p>
     </div>
   </div>
-
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -33,18 +32,17 @@
           <li><a href="https://github.com/courtneyphillips">Github</a></li>
           <li><a href="https://www.linkedin.com/in/courtneymaephillips">LinkedIn</a></li>
           <% if user_signed_in? %>
-          <li><a href="#">Logged in as <strong><%= current_user.email %></a></strong></a></li>
-          <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
-          <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+            <li><a href="#">Logged in as <strong><%= current_user.email %></a></strong></a></li>
+            <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
+            <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
           <% else %>
-          <li><%= link_to "Sign up", new_user_registration_path %> </li>
-          <li><%= link_to "Login", new_user_session_path %></li>
+            <li><%= link_to "Sign up", new_user_registration_path %> </li>
+            <li><%= link_to "Login", new_user_session_path %></li>
           <% end %>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
-
   <div class="container">
     <%= flash[:alert] %>
     <%= flash[:notice] %>
