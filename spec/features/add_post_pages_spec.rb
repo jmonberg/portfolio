@@ -57,6 +57,17 @@ describe 'the adding a blog post path' do
     expect(page).to have_content('Access Denied')
   end
 
+  it 'will redirect to edit page if issues updating' do
+    login_admin
+    post = FactoryGirl.create(:post)
+    visit post_path(post)
+    click_link 'Edit'
+    fill_in 'Title', :with => ''
+    fill_in 'Content', :with => ''
+    click_button('Update Post')
+    expect(page).to have_content('Edit Post')
+  end
+
    it 'will save changes made when editing' do
      login_admin
      post = FactoryGirl.create(:post)
