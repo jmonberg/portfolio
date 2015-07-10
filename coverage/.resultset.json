@@ -1,32 +1,9 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Guest/Desktop/rails-portfolio/spec/features/add_category_pages_spec.rb": [
+      "/Users/Guest/Desktop/rails-portfolio/spec/controllers/comments_controller_spec.rb": [
         1,
         null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
         1,
         null,
         null
@@ -552,11 +529,14 @@
         null,
         null,
         1,
+        1,
+        null,
+        null,
+        1,
         null,
         null
       ],
       "/Users/Guest/Desktop/rails-portfolio/app/models/user.rb": [
-        1,
         1,
         null,
         null,
@@ -566,6 +546,103 @@
       ],
       "/Users/Guest/Desktop/rails-portfolio/app/helpers/application_helper.rb": [
         1,
+        null
+      ],
+      "/Users/Guest/Desktop/rails-portfolio/app/helpers/comments_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/rails-portfolio/app/helpers/pages_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/rails-portfolio/app/controllers/comments_controller.rb": [
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/rails-portfolio/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/rails-portfolio/spec/controllers/pages_controller_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/rails-portfolio/app/controllers/pages_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/rails-portfolio/spec/features/add_category_pages_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/Guest/Desktop/rails-portfolio/spec/features/add_post_pages_spec.rb": [
@@ -758,6 +835,40 @@
         null,
         null
       ],
+      "/Users/Guest/Desktop/rails-portfolio/spec/helpers/comments_helper_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/rails-portfolio/spec/helpers/pages_helper_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/rails-portfolio/spec/models/category_spec.rb": [
         1,
         null,
@@ -770,6 +881,22 @@
       ],
       "/Users/Guest/Desktop/rails-portfolio/app/models/category.rb": [
         1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/rails-portfolio/spec/models/comment_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/rails-portfolio/app/models/comment.rb": [
         1,
         1,
         1,
@@ -815,7 +942,6 @@
         1,
         null,
         1,
-        2,
         2,
         2,
         2,
@@ -883,13 +1009,6 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/rails-portfolio/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        null
-      ],
       "/Users/Guest/Desktop/rails-portfolio/app/controllers/projects_controller.rb": [
         1,
         1,
@@ -943,14 +1062,8 @@
         null,
         null,
         null
-      ],
-      "/Users/Guest/Desktop/rails-portfolio/app/models/comment.rb": [
-        1,
-        1,
-        1,
-        null
       ]
     },
-    "timestamp": 1436552822
+    "timestamp": 1436555798
   }
 }

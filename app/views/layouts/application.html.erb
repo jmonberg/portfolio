@@ -70,6 +70,8 @@
           <li><%= link_to "Home", categories_path %></li>
           <li><%= link_to "Add New Language", new_category_path %></li>
           <li><%= link_to "About", about_path %></li>
+          <li><%= link_to "Blog", posts_path %></li>
+
           <li><a href="https://github.com/courtneyphillips">Github</a></li>
           <li><a href="https://www.linkedin.com/in/courtneymaephillips">LinkedIn</a></li>
 
@@ -77,6 +79,8 @@
             <li><a href="#">Logged in as <strong><%= current_user.email %></a></strong></a></li>
             <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
             <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+          <% elsif !user_signed_in? %>
+            <li>Admin Log In</li>
           <% else %>
             <li><%= link_to "Sign up", new_user_registration_path %> </li>
             <li><%= link_to "Login", new_user_session_path %></li>
@@ -91,7 +95,7 @@
       <% flash.each do |name, msg| %>
         <%= content_tag(:div, msg, class: "alert") %>
       <% end %>
-      
+
       <%= yield %>
 
     </div>
