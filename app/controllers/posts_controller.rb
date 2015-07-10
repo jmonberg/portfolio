@@ -41,7 +41,7 @@ end
     @post = Post.find(params[:id])
     @post.destroy
 
-    redirect_to posts_path
+    render 'show'
   end
 
 
@@ -49,7 +49,8 @@ end
 
   def admin_only
     unless current_user.admin?
-      redirect_to root_path, :alert => "Access Denied"
+      @post = Post.find(params[:id])
+      redirect_to posts_path, :alert => "Access Denied"
     end
   end
 
