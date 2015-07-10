@@ -21,12 +21,18 @@ describe "the add a category process" do
     expect(page).to have_content 'errors'
   end
 
-    it "gives error when no description is entered" do
-      login_admin
-      visit new_category_path
-      fill_in "Name", :with => 'test'
-      fill_in "Description", :with => ''
-      click_on 'Create Category'
-      expect(page).to have_content 'errors'
+  it "gives error when no description is entered" do
+    login_admin
+    visit new_category_path
+    fill_in "Name", :with => 'test'
+    fill_in "Description", :with => ''
+    click_on 'Create Category'
+    expect(page).to have_content 'errors'
+  end
+
+  it "does not allow non-admins to add categories" do
+    login_user
+    visit new_category_path
+    expect(page).to have_content 'Access Denied'
   end
 end

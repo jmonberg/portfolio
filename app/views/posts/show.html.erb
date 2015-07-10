@@ -14,7 +14,7 @@
 
 
 <div id="comments">
-  <h2><%= @post.comments.count %> </h2>
+  <h4>This post has <%= @post.comments.count %> comments:</h4>
   <%= render @post.comments %>
   <h3>Add a Comment</h3>
   <%= render "comments/form" %>
