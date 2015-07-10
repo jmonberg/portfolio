@@ -7,7 +7,6 @@ FactoryGirl.define do
     factory(:project) do
       name('Project')
       description('A really cool project')
-      github('github.com/test')
     end
   end
 
@@ -25,11 +24,12 @@ FactoryGirl.define do
   factory(:post) do
     title('title')
     content('content')
+  end
 
-    factory(:comment) do
-      name('name')
-      body('body')
-    end
+  factory(:comment) do
+    post
+    name('name')
+    body('body')
   end
 
 end

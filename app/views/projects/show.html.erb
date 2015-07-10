@@ -9,7 +9,7 @@
 
 
   <a class="btn btn-xs btn-warning" role="button"<%= link_to "Edit", edit_category_project_path(@category, @project) %></a>
-  <a class="btn btn-xs btn-danger" role="button"<%= link_to "Delete", category_project_path(@category, @project),
+  <a class="btn btn-xs btn-danger" role="button"<%= link_to "Delete Project", category_project_path(@category, @project),
 :data => {:confirm => "Are you sure you want to delete this project?",
   :method => "delete"} %></a>
 
