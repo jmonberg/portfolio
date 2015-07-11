@@ -1,28 +1,68 @@
-== README
+#Portfolio
+http://stark-bastion-5208.herokuapp.com/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+---
 
-Things you may want to cover:
+## Synopsis
 
-* Ruby version
+Portfolio was built by [Courtney Phillips](https://github.com/courtneymaepdx). Crafted as part of the Spring 2015 Ruby on Rails course curriculum at [Epicodus](https://www.epicodus.com/).
 
-* System dependencies
+## Motivation
 
-* Configuration
+Portfolio was created as an exercise in Ruby on Rails app creation, especially with user authentication, authorization, database associations, integration testing, SASS, and aesthetically-pleasing styles.
 
-* Database creation
+## Functionality
 
-* Database initialization
+Portfolio is a basic web development portfolio with a blog, area to show off programming language skills, and gallery of specific project examples. Users can create accounts and comment on various blog posts.
 
-* How to run the test suite
+## Installation
 
-* Services (job queues, cache servers, search engines, etc.)
+The Portfolio can simply be viewed at its Heroku location
 
-* Deployment instructions
+## Contribute
 
-* ...
+- Issue Tracker: https://github.com/courtneyphillips/question-and-answer-forum/issues
+- Source Code: https://github.com/courtneyphillips/question-and-answer-forum
+- Pull Requests: https://github.com/courtneyphillips/question-and-answer-forum/pulls
 
+## Development Roadmap
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Portfolio is still a work in progress. The following are features, fixes and tweaks to be implemented as the project develops. Any additional suggestions can be contributed via the Issue Tracker above.
+
+- Aesthetic fixes, including adding additional images.
+- More 'eloquent' jQuery transitions and effects.
+- Expanded functionality, including ability create accounts.
+- Two tiers of accounts; basic user account, and verified "expert" account for those that can prove their relevant education/experience in the field.
+- Ability to add categories/tags to questions.
+- Ability to sort by whatever tags, or combination of tags.
+- Search functionality.
+
+## Contact
+
+Questions, grievances and hellos can be directed to Courtney at <courtney.mae.phillips@gmail.com>.
+
+## License
+
+The MIT License (MIT)
+
+Copyright (c) 2015 Courtney Phillips
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+---
