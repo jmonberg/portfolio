@@ -1,6 +1,6 @@
 <h2>Blog</h2>
 <% if @posts.any? %>
-  <hr>
+  <hr><div class="blog_list">
   <% @posts.each do |post| %>
     <div class="post_wrapper">
       <h3 class="title"><%= link_to post.title, post %></h3>
@@ -18,3 +18,4 @@
   </p>
 
 <% end %>
+</div>
