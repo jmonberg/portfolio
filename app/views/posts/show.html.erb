@@ -2,7 +2,7 @@
   <%= @post.title %>
 </h1>
 
-<p class="date">
+<p class="accent">
   Submitted <%= time_ago_in_words(@post.created_at) %> ago
   | <%= link_to "Edit", edit_post_path(@post) %> |
   <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: 'Are you sure?' } %>
@@ -14,8 +14,8 @@
 
 <hr>
 <div id="comments">
-  <h4>This post has <%= @post.comments.count %> comments:</h4><br>
+  <h3>This post has <%= @post.comments.count %> comments:</h3><br>
   <%= render @post.comments %>
-  <h3>Add a Comment</h3>
+  <h4>Add a Comment</h4>
   <%= render "comments/form" %>
 </div>

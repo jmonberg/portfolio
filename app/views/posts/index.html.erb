@@ -1,9 +1,12 @@
+<h2>Blog</h2>
 <% if @posts.any? %>
   <hr>
   <% @posts.each do |post| %>
     <div class="post_wrapper">
-      <h2 class="title"><%= link_to post.title, post %></h2>
-      <p class="date"><em><%= post.created_at.strftime("%B %d, %Y") %></em></p>
+      <h3 class="title"><%= link_to post.title, post %></h3>
+
+      <p class="accent"><em><%= post.created_at.strftime("%B %d, %Y") %></em></p>
+      <p class="accent-medium"><%= post.comments.length %> comments</p>
     </div>
   <hr>
   <% end %>

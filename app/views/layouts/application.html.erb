@@ -5,12 +5,16 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <div class="jumbotron">
-    <div class="container">
-      <h1>Courtney Phillips</h1>
-      <p class="lead">Web Developer, Instructor, and Mexican Food enthusiast from Portland, Oregon.</p>
+  <div class="heading">
+    <div class="author">
+      <h1 class="author">Courtney Phillips</h1>
+    </div>
+    <div class="tagline">
+      <h2 class="tagline">Full-Stack Web Developer</h2>
     </div>
   </div>
   <nav class="navbar navbar-default">
@@ -70,5 +74,11 @@
     </div>
     <%= yield %>
   </div>
+  <footer class="footer">
+    <div class="sub-footer">
+      <p class="accent-strong">Courtney Phillips</p>
+      <p class="accent">With love from Portland, OR  |  2015 </p>
+    </div>
+  </footer>
 </body>
 </html>
