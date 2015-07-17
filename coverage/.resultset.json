@@ -1,6 +1,14 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/Guest/Desktop/rails-portfolio-2/spec/ajax/references_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/rails-portfolio-2/spec/controllers/comments_controller_spec.rb": [
         1,
         null,
@@ -43,7 +51,17 @@
         null,
         null,
         null,
+        null,
+        null,
         1,
+        1,
+        null,
+        null,
+        1,
+        52,
+        52,
+        null,
+        null,
         null,
         null,
         null,
@@ -1408,6 +1426,6 @@
         null
       ]
     },
-    "timestamp": 1437159823
+    "timestamp": 1437160963
   }
 }

@@ -17,10 +17,10 @@
 
 
 require 'simplecov'
+require 'capybara/poltergeist'
 
 SimpleCov.start
-require 'capybara/poltergeist'
-Capybara.javascript_driver = :poltergeist
+
 
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
@@ -38,6 +38,7 @@ RSpec.configure do |config|
     #     # => "be bigger than 2"
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
   end
+  Capybara.javascript_driver = :poltergeist
 
   # rspec-mocks config goes here. You can use an alternate test double
   # library (such as bogus or mocha) by changing the `mock_with` option here.
