@@ -13,9 +13,16 @@
 </p>
 
 <hr>
-<div id="comments">
+<div id="comments_section">
+
   <h3>This post has <%= @post.comments.count %> comments:</h3><br>
-  <%= render @post.comments %>
+
   <h4>Add a Comment:</h4>
+
   <%= link_to "New Comment", new_post_comment_path(@post), id: "new_comment_link", remote: true %>
+
+<div id="comments">
+  <%= render @post.comments %>
+</div>
+
 </div>
