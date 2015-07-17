@@ -16,10 +16,11 @@
   </ul>
 <br><br>
   <a class="btn btn-info btn-block" role="button"<%= link_to "Add New Category", new_category_path %></a><hr>
-  <%= link_to "See References", references_path, id: "show_references_link", class: "btn btn-info btn-md show_references", remote: true %>
-  <%= link_to "Hide References", references_path, id: "show_references_link", class: "btn btn-info btn-md hide_references", remote: true %>
+  <%= link_to "See References", references_path, id: "show_references_link", class: "btn btn-info btn-md show_hide", remote: true %>
+  <%= link_to "See References", references_path, id: "show_references_link", class: "btn btn-info btn-md show_hide", remote: true %>
 
 </div>
-<div class="references_toggle">
-  <%= render "pages/references" %>
+  <div class="references_toggle">
+    <%= render("references/index") %>
+  <a href="#" class="show_hide">hide</a>
 </div>

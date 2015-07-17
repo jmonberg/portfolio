@@ -15,3 +15,23 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
+$(document).ready(function(){
+
+  $(".references_toggle").hide();
+  $(".show_hide").show();
+  $(".hide_references").hide();
+
+  $('.show_references').click(function(){
+    $(".references_toggle").slideToggle();
+    $(".show_references").hide();
+    $(".hide_references").show();
+  });
+
+  $('.hide_references').click(function(){
+    $(".references_toggle").slideToggle();
+    $(".show_references").show();
+    $(".hide_references").hide();
+  });
+
+});
