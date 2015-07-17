@@ -8,6 +8,11 @@ class CommentsController < ApplicationController
     redirect_to post_path(@post)
   end
 
+  def new
+    @post = Post.find(params[:post_id])
+  end
+
+
   def edit
   end
 
