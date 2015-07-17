@@ -2,7 +2,7 @@ require 'rails_helper'
 require 'helpers/login_helper'
 
 describe 'the adding a blog post path' do
-  it 'will only allow admins to post' do
+  it 'will only allow admins to post', js:true do
     login_user
     visit new_post_path
     expect(page).to have_content('Access Denied')

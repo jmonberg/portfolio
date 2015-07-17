@@ -11,7 +11,7 @@ class CommentsController < ApplicationController
         format.js
       end
     else
-      render :new
+      flash[:notice] = "There was an error saving your comment."
     end
   end
 
