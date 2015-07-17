@@ -1,0 +1,11 @@
+
+<h4><%= reference.name %> </h4>
+<p><%= reference.body %></p>
+<p class="accent"><%= time_ago_in_words(reference.created_at) %> ago</p></em>
+<% if user_signed_in? %>
+<p><%= link_to 'Delete Reference', [reference],
+method: :delete,
+class: "button",
+  data: { confirm: 'Are you sure you want to delete this reference?' } %></p>
+  <% end %>
+<hr>

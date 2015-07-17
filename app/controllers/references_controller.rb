@@ -9,8 +9,8 @@ class ReferencesController < ApplicationController
         format.html { redirect_to references_path }
         format.js
       end
-    else
-      render :new
+    # else
+    #   render :new
     end
   end
 
@@ -19,8 +19,7 @@ class ReferencesController < ApplicationController
   end
 
   def new
-    @post = Post.find(params[:post_id])
-    @reference = @post.comments.new
+    @reference = Reference.new
   end
 
   def edit
@@ -30,7 +29,7 @@ class ReferencesController < ApplicationController
   end
 
   def destroy
-    @reference = Referemce.find(params[:id])
+    @reference = Reference.find(params[:id])
     @reference.destroy
     redirect_to references_path
   end

@@ -1,1 +1,9 @@
-test
+<div id="references_list">
+  <h2>References</h2>
+  <%= render @references %>
+</div>
+
+
+    <%= link_to "Add New Reference", new_reference_path, id: "add_reference_link", class: "btn btn-info btn-md show_hide btn-block", remote: true %><br>
+    <a class="btn btn-info btn-block" role="button" id="hide_references">Hide References</a>
+</div>

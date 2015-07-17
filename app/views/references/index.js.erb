@@ -1,1 +1,10 @@
-$('#see_references_link').hide().after('<%= j render("index") %>');
+$('#show_references_link').hide().after('<%= j render("index") %>');
+
+$(document).ready(function(){
+  $( "#hide_references").click(function() {
+    $("#references_list").hide("slow");
+    $("#hide_references").hide();
+    $("#add_reference_link").hide();
+    $("#show_references_link").show();
+  });
+});
