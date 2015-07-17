@@ -6,7 +6,6 @@ class CommentsController < ApplicationController
     @post = Post.find(params[:post_id])
     @comment = @post.comments.create(comment_params)
     if @comment.save
-      flash[:notice] = "Comment successfully added!"
       respond_to do |format|
         format.html { redirect_to post_path(@comment.post) }
         format.js

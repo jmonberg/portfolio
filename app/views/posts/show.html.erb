@@ -20,7 +20,7 @@
   <h4>Add a Comment:</h4>
 
   <%= link_to "New Comment", new_post_comment_path(@post), id: "new_comment_link", remote: true %>
-
+  <hr>
 <div id="comments">
   <%= render @post.comments %>
 </div>
