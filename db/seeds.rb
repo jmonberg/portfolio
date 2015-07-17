@@ -28,3 +28,5 @@ Post.create([{
   Bonbon tiramisu chupa chups fruitcake halvah soufflé muffin cheesecake lollipop. Candy chupa chups gingerbread caramels tootsie roll. Gummi bears toffee lollipop tart candy canes tiramisu tiramisu marshmallow. Sweet danish cookie croissant halvah chupa chups chocolate chupa chups. Wafer danish gummi bears liquorice chupa chups pastry icing cake. Bonbon marshmallow caramels halvah soufflé. Sugar plum tootsie roll cotton candy marshmallow candy. Chocolate bar candy canes cake toffee croissant gingerbread fruitcake. Pudding dragée cake jujubes pastry gummi bears sweet roll oat cake. Wafer soufflé marzipan dessert powder toffee. Gummi bears macaroon cake biscuit bear claw croissant tootsie roll ice cream danish. Jelly-o cake chocolate.'
 
     }])
+
+Reference.create([{name: 'Person', body: 'Test'}])
