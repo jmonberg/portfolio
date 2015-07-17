@@ -1,14 +1,6 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Guest/Desktop/rails-portfolio-2/spec/ajax/references_spec.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
       "/Users/Guest/Desktop/rails-portfolio-2/spec/controllers/comments_controller_spec.rb": [
         1,
         null,
@@ -58,8 +50,8 @@
         null,
         null,
         1,
-        52,
-        52,
+        54,
+        54,
         null,
         null,
         null,
@@ -1221,6 +1213,20 @@
         1,
         null
       ],
+      "/Users/Guest/Desktop/rails-portfolio-2/spec/models/reference_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        null
+      ],
+      "/Users/Guest/Desktop/rails-portfolio-2/app/models/reference.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/Guest/Desktop/rails-portfolio-2/spec/models/user_spec.rb": [
         1,
         null,
@@ -1426,6 +1432,6 @@
         null
       ]
     },
-    "timestamp": 1437160963
+    "timestamp": 1437161482
   }
 }

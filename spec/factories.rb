@@ -32,4 +32,8 @@ FactoryGirl.define do
     body('body')
   end
 
+  factory(:reference) do
+    name('Person')
+    body('Reference Body')
+  end
 end
