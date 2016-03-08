@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-User.create([{email: 'courtney.mae.phillips@gmail.com', password: 'administrator', password_confirmation: 'administrator', admin: true}])
+User.create([{email: 'jmonberg@msu.edu', password: 'administrator', password_confirmation: 'administrator', admin: true}])
 
 Post.create([{
   title: 'Lorem Ipsum',
