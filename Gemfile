@@ -11,11 +11,18 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'sass'
 gem 'devise'
 
+gem 'puma'
+
 group :development do
   gem 'byebug'
   gem 'web-console'
   gem 'spring'
   gem 'quiet_assets'
+  gem 'capistrano',         require: false
+  gem 'capistrano-rvm',     require: false
+  gem 'capistrano-rails',   require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano3-puma',   require: false
 end
 
 group :test, :development do
