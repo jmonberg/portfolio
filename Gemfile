@@ -30,6 +30,7 @@ group :test, :development do
   gem 'launchy'
   gem 'poltergeist'
   gem 'database_cleaner'
+  gem 'capistrano-secrets-yml', '~> 1.0.0'
 end
 
 group :test do
